@@ -30,7 +30,7 @@ class Song
   end
 
   def self.genre_count
-    genre_hash = @@genres.each do |k|
+    genres_hash = @@genres.each do |k|
 
       if @@genre_count.empty?
          @@genre_count[k] = 0
