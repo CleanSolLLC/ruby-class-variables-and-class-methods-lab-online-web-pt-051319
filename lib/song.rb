@@ -13,9 +13,9 @@ class Song
     # => ["Rap", "Pop"]
 
     def intialize(name, artist, genre)
-      @song_name = song_name
-      @artist_name = artist_name
-      @genre_type = genre_type
+      @song_name = name
+      @artist_name = artist
+      @genre_type = genre
       @@count+=1
       @@genres << genre
       @@artists << artist
