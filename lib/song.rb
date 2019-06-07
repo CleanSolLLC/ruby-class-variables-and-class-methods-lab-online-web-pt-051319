@@ -51,7 +51,7 @@ class Song
 end
 
 def self.artist_count
-  @@artist_count = @@artists.each do |k|
+  artists_hash = @@artists.each do |k|
     if @@artist_count.empty?
        @@artist_count[k] = 0
        @@artist_count[k] +=1
@@ -64,8 +64,9 @@ def self.artist_count
       @@artist_count[k] +=1
   # example{"rap" => 5, "rock" => 1, "country" => 3}
     end
+@@artists = artists_hash
   end
-@@artist_count
+@@artists
 end
 
   def self.genres
