@@ -44,7 +44,6 @@ class Song
     # example{"rap" => 5, "rock" => 1, "country" => 3}
     end
 end
-@@genre_count
 binding.pry
 end
 
