@@ -13,7 +13,7 @@ class Song
     # Song.genres will show
     # => ["Rap", "Pop"]
 
-    def intialize(name, artist, genre)
+    def intialize(name)
       binding.pry
       @song_name = name
       @artist_name = artist
