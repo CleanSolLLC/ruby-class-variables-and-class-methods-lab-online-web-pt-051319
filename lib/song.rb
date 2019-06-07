@@ -13,14 +13,14 @@ class Song
     # Song.genres will show
     # => ["Rap", "Pop"]
 
-    def intialize(name)
+    def intialize
       binding.pry
-      @song_name = name
-      @artist_name = artist
-      @genre_type = genre
+      #@song_name = name
+      #@artist_name = artist
+      #@genre_type = genre
       @@count+=1
-      @@genres << genre
-      @@artists << artist
+      @@genres << @genre
+      @@artists << @artist
     end
 
   def self.count
