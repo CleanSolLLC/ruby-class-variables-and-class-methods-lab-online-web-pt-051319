@@ -14,7 +14,6 @@ class Song
     # => ["Rap", "Pop"]
 
     def initialize(name, artist, genre)
-      binding.pry
       @song_name = name
       @artist_name = artist
       @genre_type = genre
