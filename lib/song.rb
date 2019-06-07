@@ -29,18 +29,18 @@ class Song
 
   def self.genre_count
     @@genre_count = @@genres.each do |k|
-    
+
       if @@genre_count.empty?
          @@genre_count[k] = 0
          @@genre_count[k] +=1
-      
+
       elsif @@genre_count.has_key?(k)
         @@genre_count[k] +=1
-      
+
       else
         @@genre_count[k] = 0
         @@genre_count[k] +=1
-      
+
     # example{"rap" => 5, "rock" => 1, "country" => 3}
     end
 end
