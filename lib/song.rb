@@ -20,7 +20,6 @@ class Song
       @@count+=1
       @@genres << @genre
       @@artists << @artist
-      binding.pry
     end
 
   def self.count
@@ -69,6 +68,7 @@ end
 
   def self.artists
     @@artists.uniq
+    binding.pry
   end
 
 end
