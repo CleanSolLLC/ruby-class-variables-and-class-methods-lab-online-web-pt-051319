@@ -5,8 +5,6 @@ class Song
   @@artist_count = {} #hash with keys of artists pointing to totals
   @@genres = []
   @@artists = []
-  genres_hash = {}
-  artists_hash = {}
 
   attr_accessor :name, :artist, :genre
     #Song.artists will show
@@ -30,7 +28,7 @@ class Song
   end
 
   def self.genre_count
-    genres_hash = @@genres.each do |k|
+      @@genres.each do |k|
 
       if @@genre_count.empty?
          @@genre_count[k] = 0
@@ -45,13 +43,14 @@ class Song
 
     # example{"rap" => 5, "rock" => 1, "country" => 3}
       end
-      @@genres = genres_hash
+      
     end
-@@genres
+@@genre_count
 end
 
 def self.artist_count
-  artists_hash = @@artists.each do |k|
+  @@artists.each do |k|
+    
     if @@artist_count.empty?
        @@artist_count[k] = 0
        @@artist_count[k] +=1
@@ -64,9 +63,8 @@ def self.artist_count
       @@artist_count[k] +=1
   # example{"rap" => 5, "rock" => 1, "country" => 3}
     end
-@@artists = artists_hash
   end
-@@artists
+@@artist_count
 end
 
   def self.genres
