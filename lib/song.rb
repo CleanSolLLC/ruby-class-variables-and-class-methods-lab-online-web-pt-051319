@@ -1,3 +1,4 @@
+require 'pry'
 class Song
   @@count = 0 #num of songs in Songs class
   @@genre_count = {} #hash with keys of genre pointing to totals
@@ -13,6 +14,7 @@ class Song
     # => ["Rap", "Pop"]
 
     def intialize(name, artist, genre)
+      binding.pry
       @song_name = name
       @artist_name = artist
       @genre_type = genre
