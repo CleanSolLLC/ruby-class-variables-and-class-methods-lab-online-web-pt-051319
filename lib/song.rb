@@ -58,7 +58,8 @@ def self.artist_count
       @@artist_count[k] = 0
       @@artist_count[k] +=1
   # example{"rap" => 5, "rock" => 1, "country" => 3}
-end
+    end
+  end
 @@artist_count
 end
 
@@ -68,7 +69,6 @@ end
 
   def self.artists
     @@artists.uniq
-    binding.pry
   end
 
 end
