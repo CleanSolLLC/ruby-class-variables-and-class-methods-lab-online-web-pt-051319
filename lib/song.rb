@@ -29,22 +29,23 @@ class Song
 
   def self.genre_count
     @@genre_count = @@genres.each do |k|
-      binding.pry
+    
       if @@genre_count.empty?
          @@genre_count[k] = 0
          @@genre_count[k] +=1
-         binding.pry
+      
       elsif @@genre_count.has_key?(k)
         @@genre_count[k] +=1
-        binding.pry
+      
       else
         @@genre_count[k] = 0
         @@genre_count[k] +=1
-        binding.pry
+      
     # example{"rap" => 5, "rock" => 1, "country" => 3}
-  end
+    end
 end
 @@genre_count
+binding.pry
 end
 
 def self.artist_count
